@@ -2,27 +2,29 @@
   background: #101010;
   border: 3px solid #00ff00;
   border-radius: 10px;
-  box-shadow: 0 0 16px rgba(0,255,0,0.4);
+  box-shadow: 0 0 20px rgba(0,255,0,0.5);
   padding: 2rem 2rem;
   margin: 2rem auto;
   max-width: 800px;
   color: #00ff00;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.7;
+  position: relative;
+  z-index: 10;
 }
 .sectionTitle {
   color: #00d9ff;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   font-weight: bold;
-  text-shadow: 0 0 12px #00ff00, 0 0 8px #00d9ff;
+  text-shadow: 0 0 8px #00d9ff;
 }
 .processTable {
   width: 100%;
   border-collapse: collapse;
-  font-size: 1.15rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.7;
   background: #101010;
 }
 .processTable thead {
@@ -39,11 +41,11 @@
 .processTable td {
   padding: 0.8rem 0.5rem;
   border-bottom: 1px solid #222;
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 .projectRow {
   transition: background 0.2s;
-  font-size: 1.15rem;
+  font-size: 1rem;
   background: #101010;
 }
 .projectRow:hover {

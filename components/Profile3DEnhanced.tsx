@@ -93,12 +93,13 @@ export default function Profile3DEnhanced() {
       borderRadius: '12px',
       position: 'relative',
       border: '3px solid #00ff00',
-      boxShadow: '0 0 30px rgba(0,255,0,0.4)',
+      boxShadow: '0 0 30px rgba(0,255,0,0.5)',
       padding: '2rem',
       height: '450px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      zIndex: 10,
     }}>
       <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
         <ambientLight intensity={0.3} />

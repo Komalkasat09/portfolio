@@ -2,19 +2,22 @@
   background: #101010;
   border: 3px solid #00ff00;
   border-radius: 10px;
-  box-shadow: 0 0 16px rgba(0,255,0,0.4);
+  box-shadow: 0 0 20px rgba(0,255,0,0.5);
   padding: 2rem 2rem;
   margin: 2rem auto;
   max-width: 800px;
   color: #00ff00;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.7;
+  position: relative;
+  z-index: 10;
 }
 .sectionTitle {
   color: #00d9ff;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
+  font-weight: bold;
   text-shadow: 0 0 8px #00d9ff;
 }
 .skillGroup {
@@ -23,10 +26,10 @@
 }
 .categoryName {
   color: #ff0055;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0.7rem;
-  text-shadow: 0 0 8px #ff0055;
+  text-shadow: 0 0 6px #ff0055;
 }
 .skillItem {
   display: flex;
@@ -37,7 +40,7 @@
 .skillName {
   color: #00ff00;
   min-width: 180px;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 .progressBar {
   flex: 1;
@@ -55,7 +58,7 @@
 }
 .skillLevel {
   color: #00d9ff;
-  font-size: 0.9rem;
+  font-size: 1rem;
   min-width: 40px;
   text-align: right;
 }

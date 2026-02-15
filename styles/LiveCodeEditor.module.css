@@ -1,20 +1,22 @@
 .editorContainer {
   background: #101010;
-  border: 2px solid #00ff00;
+  border: 3px solid #00ff00;
   border-radius: 10px;
-  box-shadow: 0 0 16px #00ff00;
-  padding: 1.2rem 1rem 1.5rem 1rem;
-  margin: 2rem auto 1.5rem auto;
-  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0,255,0,0.5);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
   color: #00ff00;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  z-index: 2;
+  position: relative;
+  z-index: 10;
 }
 .editorHeader {
-  font-size: 1.2rem;
-  margin-bottom: 0.7rem;
-  color: #00ff00;
-  text-shadow: 0 0 8px #00ff00;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #00d9ff;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00d9ff;
 }
 .codeArea {
   width: 100%;
