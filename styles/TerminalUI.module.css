@@ -1,0 +1,28 @@
+.terminalContainer {
+  background: #0a0e27;
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #00ff00;
+  width: 90vw;
+  max-width: 700px;
+  margin: 2rem auto;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  color: #00ff00;
+  overflow: hidden;
+}
+.terminalHeader {
+  background: #111;
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #00ff00;
+  display: flex;
+  align-items: center;
+}
+.prompt {
+  color: #00d9ff;
+  text-shadow: 0 0 6px #00ff00;
+}
+.terminalBody {
+  padding: 1.5rem;
+  min-height: 300px;
+}

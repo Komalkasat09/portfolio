@@ -1,0 +1,37 @@
+.bootContainer {
+  background: #0a0e27;
+  color: #00ff00;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bootLine {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  text-shadow: 0 0 8px #00ff00, 0 0 2px #00d9ff;
+  letter-spacing: 2px;
+}
+.accessGranted {
+  color: #ff0055;
+  font-weight: bold;
+  margin-left: 1rem;
+  text-shadow: 0 0 8px #ff0055, 0 0 2px #00d9ff;
+}
+.progressBar {
+  width: 320px;
+  height: 8px;
+  background: #222;
+  border-radius: 4px;
+  margin-top: 2rem;
+  box-shadow: 0 0 8px #00ff00;
+}
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #00ff00, #00d9ff);
+  border-radius: 4px;
+  transition: width 0.5s;
+}
