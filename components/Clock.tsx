@@ -3,8 +3,10 @@ import styles from '../styles/Clock.module.css';
 
 export default function Clock() {
   const [time, setTime] = useState(new Date());
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const interval = setInterval(() => setTime(new Date()), 1000);
     return () => clearInterval(interval);
   }, []);
@@ -19,7 +21,7 @@ export default function Clock() {
   return (
     <div className={styles.clock}>
       <span className={styles.label}>SYSTEM TIME:</span>
-      <span className={styles.time}>{formatTime(time)}</span>
+      <span className={styles.time}>{mounted ? formatTime(time) : '--:--:--'}</span>
     </div>
   );
 }

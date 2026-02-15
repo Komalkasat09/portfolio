@@ -142,13 +142,20 @@ export default function BootPage() {
     const command = cmd.trim().toLowerCase();
     
     if (command === 'clear') {
-      setOutput([]);
+      setOutput([helpText]);
       return;
     }
     
     if (command === 'ls projects') {
       setCurrentSection('projects');
-      setOutput(prev => [...prev, 'Loading projects...']);
+      setOutput(prev => [
+        ...prev,
+        'Listing projects...\n' +
+        '[PID: 101] SkillSphere\n' +
+        '[PID: 102] AI Internship Finder\n' +
+        '[PID: 103] Misinformation Detector\n' +
+        '[PID: 104] Sign Language Translator'
+      ]);
       return;
     }
     

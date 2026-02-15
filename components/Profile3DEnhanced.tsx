@@ -86,15 +86,19 @@ function HolographicCard() {
 
 export default function Profile3DEnhanced() {
   return (
-    <div style={{ 
-      width: '100%', 
-      height: '400px', 
-      margin: '1rem 0',
-      background: 'transparent',
+    <div style={{
+      maxWidth: '800px',
+      margin: '2rem auto',
+      background: '#101010',
       borderRadius: '12px',
       position: 'relative',
-      border: '1px solid #00ff00',
-      boxShadow: '0 0 20px rgba(0, 255, 0, 0.3)',
+      border: '3px solid #00ff00',
+      boxShadow: '0 0 30px rgba(0,255,0,0.4)',
+      padding: '2rem',
+      height: '450px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
     }}>
       <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
         <ambientLight intensity={0.3} />

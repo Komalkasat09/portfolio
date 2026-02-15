@@ -1,10 +1,10 @@
 .terminalContainer {
-  background: #000;
-  border: 2px solid #00ff00;
+  background: rgba(0,0,0,0.95);
+  border: 3px solid #00ff00;
   border-radius: 12px;
-  box-shadow: 0 0 32px #00ff00;
+  box-shadow: 0 0 32px rgba(0,255,0,0.4);
   width: 95vw;
-  max-width: 700px;
+  max-width: 800px;
   margin: 2rem auto;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   color: #00ff00;
@@ -26,6 +26,10 @@
   text-shadow: 0 0 6px #00ff00;
 }
 .terminalBody {
-  padding: 1.5rem;
+  padding: 2.2rem;
   min-height: 300px;
+  font-size: 1.18rem;
+  line-height: 1.85;
+  background: #101010;
+  color: #00ff00;
 }

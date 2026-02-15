@@ -1,5 +1,5 @@
 .editorContainer {
-  background: #000;
+  background: #101010;
   border: 2px solid #00ff00;
   border-radius: 10px;
   box-shadow: 0 0 16px #00ff00;
@@ -18,7 +18,7 @@
 }
 .codeArea {
   width: 100%;
-  background: #111;
+    background: #101010;
   color: #00ff00;
   border: 1px solid #00ff00;
   border-radius: 6px;
@@ -48,7 +48,7 @@
   color: #000;
 }
 .outputBox {
-  background: #111;
+  background: #101010;
   color: #00ff00;
   border: 1px solid #00ff00;
   border-radius: 6px;

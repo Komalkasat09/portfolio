@@ -1,24 +1,29 @@
 .projectsContainer {
-  background: #000;
-  border: 2px solid #00ff00;
+  background: #101010;
+  border: 3px solid #00ff00;
   border-radius: 10px;
-  box-shadow: 0 0 16px #00ff00;
-  padding: 1.5rem 1rem;
+  box-shadow: 0 0 16px rgba(0,255,0,0.4);
+  padding: 2rem 2rem;
   margin: 2rem auto;
-  max-width: 700px;
+  max-width: 800px;
   color: #00ff00;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 .sectionTitle {
   color: #00d9ff;
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  text-shadow: 0 0 8px #00d9ff;
+  font-weight: bold;
+  text-shadow: 0 0 12px #00ff00, 0 0 8px #00d9ff;
 }
 .processTable {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  background: #101010;
 }
 .processTable thead {
   background: #111;
@@ -27,14 +32,19 @@
   padding: 0.5rem;
   text-align: left;
   color: #00d9ff;
-  border-bottom: 1px solid #00ff00;
+  border-bottom: 2px solid #00ff00;
+  font-size: 1.2rem;
+  background: #181818;
 }
 .processTable td {
-  padding: 0.5rem;
+  padding: 0.8rem 0.5rem;
   border-bottom: 1px solid #222;
+  font-size: 1.15rem;
 }
 .projectRow {
   transition: background 0.2s;
+  font-size: 1.15rem;
+  background: #101010;
 }
 .projectRow:hover {
   background: #111;
