@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import styles from '../styles/MatrixRain.module.css';
 
 const fontSize = 18;
-const columns = 60;
 const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()';
 
 export default function MatrixRain() {
@@ -11,7 +10,7 @@ export default function MatrixRain() {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const ctx = canvas.getContext('2d');
+    let ctx = canvas.getContext('2d');
     if (!ctx) return;
     let width = window.innerWidth;
     let height = window.innerHeight;
@@ -20,6 +19,9 @@ export default function MatrixRain() {
     let drops = Array(Math.floor(width / fontSize)).fill(1);
 
     function draw() {
+      if (!canvas) return;
+      ctx = canvas.getContext('2d');
+      if (!ctx) return;
       ctx.fillStyle = 'rgba(10, 14, 39, 0.15)';
       ctx.fillRect(0, 0, width, height);
       ctx.font = `${fontSize}px monospace`;
@@ -33,8 +35,23 @@ export default function MatrixRain() {
         drops[i]++;
       }
     }
+
     const interval = setInterval(draw, 50);
-    return () => clearInterval(interval);
+
+    function handleResize() {
+      if (!canvas) return;
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+      drops = Array(Math.floor(width / fontSize)).fill(1);
+    }
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return <canvas ref={canvasRef} className={styles.matrixCanvas} />;

@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import BootScreen from '../components/BootScreen';
 import MatrixRain from '../components/MatrixRain';
