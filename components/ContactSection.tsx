@@ -10,10 +10,10 @@ interface ContactLink {
 }
 
 const contacts: ContactLink[] = [
-  { port: '9418', name: 'GitHub', url: 'https://github.com/komalkasat', protocol: 'git://' },
-  { port: '443', name: 'LinkedIn', url: 'https://linkedin.com/in/komalkasat', protocol: 'https://' },
-  { port: '587', name: 'Email', url: 'mailto:komal.kasat@example.com', protocol: 'smtp://' },
-  { port: '8080', name: 'Portfolio', url: '#', protocol: 'http://' },
+  { port: '9418', name: 'GitHub', url: 'https://github.com/Komalkasat09', protocol: 'git://' },
+  { port: '443', name: 'LinkedIn', url: 'https://linkedin.com/in/komal-kasat', protocol: 'https://' },
+  { port: '587', name: 'Email', url: 'mailto:komalkasat74653@gmail.com', protocol: 'smtp://' },
+  { port: '3000', name: 'Location', url: 'https://maps.google.com/?q=Mumbai,Maharashtra,India', protocol: 'https://' },
 ];
 
 export default function ContactSection() {
