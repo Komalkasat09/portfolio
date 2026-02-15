@@ -71,3 +71,56 @@
   font-size: 0.95rem;
   margin: 0.2rem 0;
 }
+
+@media (max-width: 768px) {
+  .timelineContainer {
+    max-width: 95%;
+    padding: 1.5rem 1rem;
+    margin: 1rem auto;
+  }
+  
+  .sectionTitle {
+    font-size: 1.1rem;
+  }
+  
+  .gitGraph {
+    padding-left: 0.75rem;
+    margin-left: 0.3rem;
+  }
+  
+  .commitBlock {
+    margin-bottom: 1.2rem;
+  }
+  
+  .commitBlock::before {
+    left: -1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timelineContainer {
+    padding: 1rem 0.75rem;
+    border-width: 2px;
+  }
+  
+  .sectionTitle {
+    font-size: 1rem;
+  }
+  
+  .gitGraph {
+    padding-left: 0.5rem;
+    margin-left: 0.2rem;
+  }
+  
+  .commitHash,
+  .commitBranch,
+  .commitRole {
+    font-size: 0.85rem;
+  }
+  
+  .commitDate,
+  .commitMessage {
+    font-size: 0.8rem;
+  }
+}

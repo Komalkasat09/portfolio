@@ -23,3 +23,28 @@
   border-radius: 8px;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .commandInput {
+    width: 300px;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.8rem;
+  }
+  
+  .prompt {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .commandInput {
+    width: 200px;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
+  
+  .prompt {
+    font-size: 0.85rem;
+    margin-right: 0.3rem;
+  }
+}

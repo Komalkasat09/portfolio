@@ -62,3 +62,57 @@
   min-width: 40px;
   text-align: right;
 }
+
+@media (max-width: 768px) {
+  .skillsContainer {
+    max-width: 95%;
+    padding: 1.5rem 1rem;
+    margin: 1rem auto;
+  }
+  
+  .sectionTitle {
+    font-size: 1.1rem;
+  }
+  
+  .categoryName {
+    font-size: 0.95rem;
+  }
+  
+  .skillName {
+    min-width: 120px;
+    font-size: 0.9rem;
+  }
+  
+  .progressBar {
+    height: 6px;
+  }
+  
+  .skillLevel {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillsContainer {
+    padding: 1rem 0.75rem;
+    border-width: 2px;
+  }
+  
+  .sectionTitle {
+    font-size: 1rem;
+  }
+  
+  .categoryName {
+    font-size: 0.9rem;
+  }
+  
+  .skillName {
+    min-width: 100px;
+    font-size: 0.85rem;
+  }
+  
+  .skillLevel {
+    font-size: 0.8rem;
+    min-width: 35px;
+  }
+}

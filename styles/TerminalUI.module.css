@@ -32,3 +32,40 @@
   background: #101010;
   color: #00ff00;
 }
+
+@media (max-width: 768px) {
+  .terminalContainer {
+    max-width: 95%;
+    margin: 1rem auto;
+  }
+  
+  .terminalHeader {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .terminalBody {
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminalContainer {
+    width: 98%;
+    border-width: 2px;
+  }
+  
+  .terminalHeader {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .terminalBody {
+    padding: 1rem 0.75rem;
+    font-size: 0.85rem;
+    min-height: 200px;
+    line-height: 1.6;
+  }
+}

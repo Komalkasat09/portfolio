@@ -21,3 +21,36 @@
   font-weight: bold;
   text-shadow: 0 0 6px #00ff00;
 }
+
+@media (max-width: 768px) {
+  .clock {
+    top: 70px;
+    right: 0.5rem;
+    padding: 0.4rem 0.7rem;
+  }
+  
+  .label {
+    font-size: 0.75rem;
+    margin-right: 0.3rem;
+  }
+  
+  .time {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .clock {
+    top: 65px;
+    right: 0.3rem;
+    padding: 0.3rem 0.5rem;
+  }
+  
+  .label {
+    display: none;
+  }
+  
+  .time {
+    font-size: 0.75rem;
+  }
+}

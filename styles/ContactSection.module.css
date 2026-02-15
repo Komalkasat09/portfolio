@@ -127,3 +127,52 @@
 .decryptButton:hover {
   background: #00d9ff;
 }
+
+@media (max-width: 768px) {
+  .contactContainer {
+    max-width: 95%;
+    padding: 1.5rem 1rem;
+    margin: 1rem auto;
+  }
+  
+  .sectionTitle {
+    font-size: 1.1rem;
+  }
+  
+  .networkTable {
+    font-size: 0.85rem;
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .networkTable th,
+  .networkTable td {
+    padding: 0.4rem 0.3rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactContainer {
+    padding: 1rem 0.75rem;
+    border-width: 2px;
+  }
+  
+  .sectionTitle {
+    font-size: 1rem;
+  }
+  
+  .statusLine {
+    font-size: 0.95rem;
+  }
+  
+  .networkTable {
+    font-size: 0.75rem;
+  }
+  
+  .networkTable th,
+  .networkTable td {
+    padding: 0.3rem 0.2rem;
+    font-size: 0.75rem;
+  }
+}

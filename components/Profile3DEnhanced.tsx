@@ -101,6 +101,23 @@ export default function Profile3DEnhanced() {
       justifyContent: 'center',
       zIndex: 10,
     }}>
+      <style jsx>{`
+        @media (max-width: 768px) {
+          div {
+            max-width: 95% !important;
+            height: 350px !important;
+            padding: 1.5rem !important;
+            margin: 1rem auto !important;
+          }
+        }
+        @media (max-width: 480px) {
+          div {
+            height: 300px !important;
+            padding: 1rem !important;
+            border-width: 2px !important;
+          }
+        }
+      `}</style>
       <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
         <ambientLight intensity={0.3} />
         <pointLight position={[5, 5, 5]} intensity={1.5} color="#00ff00" />

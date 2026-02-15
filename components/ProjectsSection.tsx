@@ -57,22 +57,23 @@ export default function ProjectsSection() {
   return (
     <div className={styles.projectsContainer}>
       <h3 className={styles.sectionTitle}>$ ps aux | grep projects</h3>
-      <table className={styles.processTable}>
-        <thead>
-          <tr>
-            <th>PID</th>
-            <th>NAME</th>
-            <th>STATUS</th>
-            <th>CPU</th>
-            <th>ACTION</th>
-          </tr>
-        </thead>
-        <tbody>
-          {projects.map((project, idx) => (
-            <motion.tr
-              key={project.pid}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
+      <div className={styles.tableWrapper}>
+        <table className={styles.processTable}>
+          <thead>
+            <tr>
+              <th>PID</th>
+              <th>NAME</th>
+              <th>STATUS</th>
+              <th>CPU</th>
+              <th>ACTION</th>
+            </tr>
+          </thead>
+          <tbody>
+            {projects.map((project, idx) => (
+              <motion.tr
+                key={project.pid}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
               transition={{ delay: idx * 0.1 }}
               className={styles.projectRow}
             >
@@ -94,9 +95,13 @@ export default function ProjectsSection() {
           ))}
         </tbody>
       </table>
+      </div>
       <div className={styles.projectDetails}>
         <p className={styles.detailsPrompt}>
           Click "Execute" or use 'cat project_[PID].json' for details
+        </p>
+        <p className={styles.mobileHint}>
+          📱 Swipe table left to see all columns →
         </p>
       </div>
 

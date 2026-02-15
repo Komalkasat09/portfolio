@@ -60,3 +60,58 @@
   min-height: 2.2rem;
   box-shadow: 0 0 8px #00ff00;
 }
+
+@media (max-width: 768px) {
+  .editorContainer {
+    max-width: 95%;
+    padding: 1.5rem 1rem;
+    margin: 1rem auto;
+  }
+  
+  .editorHeader {
+    font-size: 1.1rem;
+  }
+  
+  .codeArea {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    min-height: 120px;
+  }
+  
+  .runButton {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .outputBox {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .editorContainer {
+    padding: 1rem 0.75rem;
+    border-width: 2px;
+  }
+  
+  .editorHeader {
+    font-size: 1rem;
+  }
+  
+  .codeArea {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+    min-height: 100px;
+  }
+  
+  .runButton {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .outputBox {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+}

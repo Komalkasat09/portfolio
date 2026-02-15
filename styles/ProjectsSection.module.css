@@ -26,6 +26,33 @@
   font-size: 1rem;
   line-height: 1.7;
   background: #101010;
+  table-layout: auto;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #00ff00 #111;
+}
+
+.tableWrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.tableWrapper::-webkit-scrollbar-track {
+  background: #111;
+  border-radius: 4px;
+}
+
+.tableWrapper::-webkit-scrollbar-thumb {
+  background: #00ff00;
+  border-radius: 4px;
+}
+
+.tableWrapper::-webkit-scrollbar-thumb:hover {
+  background: #00d9ff;
 }
 .processTable thead {
   background: #111;
@@ -78,6 +105,9 @@
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 0 6px #00ff00;
+  transition: all 0.2s;
+  white-space: nowrap;
+  min-width: 60px;
   transition: background 0.2s;
 }
 .execButton:hover {
@@ -90,6 +120,20 @@
 .detailsPrompt {
   color: #00d9ff;
   font-style: italic;
+}
+
+.mobileHint {
+  display: none;
+  color: #00d9ff;
+  margin: 0.5rem 0 0 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  animation: slideLeft 2s ease-in-out infinite;
+}
+
+@keyframes slideLeft {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
 }
 
 /* Modal Styles */
@@ -229,4 +273,142 @@
   background: #00d9ff;
   box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
   transform: translateY(-2px);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .projectsContainer {
+    padding: 1.5rem 1rem;
+    max-width: 100%;
+  }
+
+  .sectionTitle {
+    font-size: 1rem;
+  }
+
+  .processTable {
+    font-size: 0.8rem;
+    display: table;
+    min-width: 100%;
+  }
+
+  .processTable th,
+  .processTable td {
+    padding: 0.5rem 0.25rem;
+    white-space: nowrap;
+  }
+
+  .processTable th {
+    font-size: 0.9rem;
+  }
+
+  .pid {
+    width: 15%;
+  }
+
+  .name {
+    width: 30%;
+  }
+
+  .statusActive,
+  .statusCompleted {
+    width: 20%;
+  }
+
+  .cpu {
+    width: 15%;
+  }
+
+  .execButton {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+    min-width: 55px;
+  }
+
+  .modal {
+    padding: 1rem;
+  }
+
+  .modalContent {
+    max-width: 95%;
+    padding: 1.5rem;
+  }
+
+  .projectDetails {
+    font-size: 0.85rem;
+  }
+
+  .mobileHint {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectsContainer {
+    padding: 1rem 0.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+
+  .processTable {
+    font-size: 0.7rem;
+  }
+
+  .processTable th,
+  .processTable td {
+    padding: 0.4rem 0.2rem;
+  }
+
+  .processTable th {
+    font-size: 0.8rem;
+  }
+
+  .pid {
+    width: 12%;
+  }
+
+  .name {
+    width: 28%;
+  }
+
+  .statusActive,
+  .statusCompleted {
+    width: 22%;
+  }
+
+  .cpu {
+    width: 13%;
+  }
+
+  .execButton {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.4rem;
+    min-width: 50px;
+  }
+
+  .modalContent {
+    padding: 1rem;
+  }
+
+  .section h3 {
+    font-size: 1rem;
+  }
+
+  .techBadge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .demoButton {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .projectDetails {
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+  }
 }
