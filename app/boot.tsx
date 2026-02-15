@@ -5,7 +5,7 @@ import MatrixRain from '../components/MatrixRain';
 import TerminalUI from '../components/TerminalUI';
 import TerminalCommandInput from '../components/TerminalCommandInput';
 import HackInPuzzle from '../components/HackInPuzzle';
-import AsciiArtProfile from '../components/AsciiArtProfile';
+import Profile3D from '../components/Profile3DEnhanced';
 import LiveCodeEditor from '../components/LiveCodeEditor';
 import ProjectsSection from '../components/ProjectsSection';
 import ExperienceTimeline from '../components/ExperienceTimeline';
@@ -130,11 +130,8 @@ export default function BootPage() {
           <div>
             {currentSection === 'home' && (
               <>
-                <AsciiArtProfile />
+                <Profile3D />
                 <LiveCodeEditor />
-                <h2 style={{ color: '#00ff00', textShadow: '0 0 8px #00ff00' }}>
-                  [KOMAL.KASAT] :: FULL-STACK_AI_ENGINEER
-                </h2>
               </>
             )}
             {currentSection === 'projects' && <ProjectsSection />}

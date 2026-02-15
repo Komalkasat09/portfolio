@@ -76,7 +76,6 @@ export default function Profile3D() {
           color="#00ff00"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/JetBrainsMono-Bold.ttf"
         >
           KOMAL KASAT
         </Text>
@@ -87,7 +86,6 @@ export default function Profile3D() {
           color="#00d9ff"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/JetBrainsMono-Regular.ttf"
         >
           FULL-STACK AI ENGINEER
         </Text>
