@@ -1,0 +1,122 @@
+.contactContainer {
+  background: #000;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 0 16px #00ff00;
+  padding: 1.5rem 1rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  color: #00ff00;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+.sectionTitle {
+  color: #00d9ff;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #00d9ff;
+}
+.statusLine {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+.statusIndicator {
+  color: #00ff00;
+  font-size: 1.5rem;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.statusText {
+  color: #00ff00;
+  text-shadow: 0 0 6px #00ff00;
+}
+.networkTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+.networkTable thead {
+  background: #111;
+}
+.networkTable th {
+  padding: 0.5rem;
+  text-align: left;
+  color: #00d9ff;
+  border-bottom: 1px solid #00ff00;
+}
+.networkTable td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #222;
+}
+.contactRow {
+  transition: background 0.2s;
+}
+.contactRow:hover {
+  background: #111;
+}
+.port {
+  color: #ff0055;
+  font-weight: bold;
+}
+.protocol {
+  color: #00d9ff;
+}
+.name {
+  color: #00ff00;
+}
+.connectButton {
+  background: #00ff00;
+  color: #000;
+  border: none;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 6px #00ff00;
+  transition: background 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+.connectButton:hover {
+  background: #00d9ff;
+}
+.encryptedMessage {
+  background: #111;
+  border: 1px dashed #ff0055;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.messageHeader {
+  color: #ff0055;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 8px #ff0055;
+}
+.messageBody {
+  color: #00ff00;
+  font-size: 0.95rem;
+}
+.decryptButton {
+  background: #ff0055;
+  color: #000;
+  border: none;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 8px #ff0055;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.decryptButton:hover {
+  background: #00d9ff;
+}

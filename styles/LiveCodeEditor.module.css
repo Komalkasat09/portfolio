@@ -1,0 +1,60 @@
+.editorContainer {
+  background: #000;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 0 16px #00ff00;
+  padding: 1.2rem 1rem 1.5rem 1rem;
+  margin: 2rem auto 1.5rem auto;
+  max-width: 600px;
+  color: #00ff00;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  z-index: 2;
+}
+.editorHeader {
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+  color: #00ff00;
+  text-shadow: 0 0 8px #00ff00;
+}
+.codeArea {
+  width: 100%;
+  background: #111;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 1rem;
+  padding: 0.7rem;
+  margin-bottom: 0.7rem;
+  box-shadow: 0 0 8px #00ff00;
+  outline: none;
+  resize: vertical;
+}
+.runButton {
+  background: #00ff00;
+  color: #000;
+  border: none;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 1.1rem;
+  padding: 0.3rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 8px #00ff00;
+  margin-bottom: 0.7rem;
+  transition: background 0.2s;
+}
+.runButton:hover {
+  background: #00d9ff;
+  color: #000;
+}
+.outputBox {
+  background: #111;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  border-radius: 6px;
+  margin-top: 0.7rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  min-height: 2.2rem;
+  box-shadow: 0 0 8px #00ff00;
+}

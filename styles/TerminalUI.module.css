@@ -1,14 +1,17 @@
 .terminalContainer {
-  background: #0a0e27;
+  background: #000;
   border: 2px solid #00ff00;
-  border-radius: 8px;
-  box-shadow: 0 0 16px #00ff00;
-  width: 90vw;
+  border-radius: 12px;
+  box-shadow: 0 0 32px #00ff00;
+  width: 95vw;
   max-width: 700px;
   margin: 2rem auto;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   color: #00ff00;
   overflow: hidden;
+  backdrop-filter: blur(2px);
+  position: relative;
+  z-index: 2;
 }
 .terminalHeader {
   background: #111;

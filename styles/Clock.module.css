@@ -1,0 +1,23 @@
+.clock {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #000;
+  border: 1px solid #00ff00;
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  z-index: 10;
+  box-shadow: 0 0 12px #00ff00;
+}
+.label {
+  color: #00d9ff;
+  font-size: 0.85rem;
+  margin-right: 0.4rem;
+}
+.time {
+  color: #00ff00;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-shadow: 0 0 6px #00ff00;
+}

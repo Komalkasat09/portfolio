@@ -1,0 +1,67 @@
+.timelineContainer {
+  background: #000;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 0 16px #00ff00;
+  padding: 1.5rem 1rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  color: #00ff00;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+.sectionTitle {
+  color: #00d9ff;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #00d9ff;
+}
+.gitGraph {
+  border-left: 2px solid #00ff00;
+  padding-left: 1rem;
+  margin-left: 0.5rem;
+}
+.commitBlock {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.commitBlock::before {
+  content: '●';
+  position: absolute;
+  left: -1.45rem;
+  top: 0;
+  color: #ff0055;
+  font-size: 1.2rem;
+}
+.commitHeader {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.commitHash {
+  color: #ff0055;
+  font-weight: bold;
+}
+.commitBranch {
+  color: #00d9ff;
+}
+.commitRole {
+  color: #00ff00;
+  font-weight: bold;
+}
+.commitCompany {
+  color: #00ff00;
+  margin-bottom: 0.2rem;
+}
+.commitDate {
+  color: #00d9ff;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.commitDiff {
+  margin-top: 0.5rem;
+}
+.diffLine {
+  color: #00ff00;
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+}

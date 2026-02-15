@@ -22,7 +22,7 @@ export default function MatrixRain() {
       if (!canvas) return;
       ctx = canvas.getContext('2d');
       if (!ctx) return;
-      ctx.fillStyle = 'rgba(10, 14, 39, 0.15)';
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.15)';
       ctx.fillRect(0, 0, width, height);
       ctx.font = `${fontSize}px monospace`;
       ctx.fillStyle = '#00ff00';

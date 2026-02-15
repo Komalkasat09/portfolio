@@ -1,0 +1,58 @@
+.skillsContainer {
+  background: #000;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 0 16px #00ff00;
+  padding: 1.5rem 1rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  color: #00ff00;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+.sectionTitle {
+  color: #00d9ff;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #00d9ff;
+}
+.skillGroup {
+  margin-bottom: 1.5rem;
+}
+.categoryName {
+  color: #ff0055;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  text-shadow: 0 0 8px #ff0055;
+}
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.skillName {
+  color: #00ff00;
+  min-width: 180px;
+  font-size: 0.95rem;
+}
+.progressBar {
+  flex: 1;
+  height: 8px;
+  background: #111;
+  border: 1px solid #00ff00;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 6px #00ff00;
+}
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #00ff00, #00d9ff);
+  box-shadow: 0 0 8px #00ff00;
+}
+.skillLevel {
+  color: #00d9ff;
+  font-size: 0.9rem;
+  min-width: 40px;
+  text-align: right;
+}

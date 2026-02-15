@@ -1,0 +1,81 @@
+.projectsContainer {
+  background: #000;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 0 16px #00ff00;
+  padding: 1.5rem 1rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  color: #00ff00;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+.sectionTitle {
+  color: #00d9ff;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 8px #00d9ff;
+}
+.processTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.processTable thead {
+  background: #111;
+}
+.processTable th {
+  padding: 0.5rem;
+  text-align: left;
+  color: #00d9ff;
+  border-bottom: 1px solid #00ff00;
+}
+.processTable td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #222;
+}
+.projectRow {
+  transition: background 0.2s;
+}
+.projectRow:hover {
+  background: #111;
+}
+.pid {
+  color: #ff0055;
+  font-weight: bold;
+}
+.name {
+  color: #00ff00;
+}
+.statusActive {
+  color: #00ff00;
+  text-shadow: 0 0 6px #00ff00;
+}
+.statusCompleted {
+  color: #00d9ff;
+}
+.cpu {
+  color: #ff0055;
+}
+.execButton {
+  background: #00ff00;
+  color: #000;
+  border: none;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 6px #00ff00;
+  transition: background 0.2s;
+}
+.execButton:hover {
+  background: #00d9ff;
+}
+.projectDetails {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.detailsPrompt {
+  color: #00d9ff;
+  font-style: italic;
+}

@@ -1,0 +1,24 @@
+.trailContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+}
+.trailDot {
+  position: absolute;
+  color: #00ff00;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.8rem;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 6px #00ff00;
+  animation: fadeOut 0.8s forwards;
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}

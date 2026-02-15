@@ -1,5 +1,5 @@
 .bootContainer {
-  background: #0a0e27;
+  background: #000;
   color: #00ff00;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   min-height: 100vh;
@@ -34,4 +34,44 @@
   background: linear-gradient(90deg, #00ff00, #00d9ff);
   border-radius: 4px;
   transition: width 0.5s;
+}
+.matrixCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.7;
+  background: #000;
+}
+.terminalContainer {
+  background: rgba(0, 0, 0, 0.95);
+  border: 2px solid #00ff00;
+  border-radius: 12px;
+  box-shadow: 0 0 32px #00ff00, 0 0 8px #00d9ff;
+  width: 95vw;
+  max-width: 700px;
+  margin: 2rem auto;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  color: #00ff00;
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+}
+.terminalHeader {
+  background: #111;
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #00ff00;
+  display: flex;
+  align-items: center;
+}
+.prompt {
+  color: #00d9ff;
+  text-shadow: 0 0 6px #00ff00;
+}
+.terminalBody {
+  padding: 1.5rem;
+  min-height: 300px;
 }
