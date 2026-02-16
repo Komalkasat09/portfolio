@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/BootScreen.module.css';
+import MatrixRain from './MatrixRain';
 
 const bootMessages = [
   'Initializing system...',
@@ -25,7 +26,9 @@ export default function BootScreen({ onComplete }: { onComplete: () => void }) {
 
   return (
     <div className={styles.bootContainer}>
+      <MatrixRain />
       <motion.div
+        className={styles.contentBox}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}

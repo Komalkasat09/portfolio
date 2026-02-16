@@ -8,26 +8,60 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
 }
+
+.contentBox {
+  background: rgba(0, 0, 0, 0.92);
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.4), inset 0 0 40px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  position: relative;
+}
+
 .bootLine {
-  font-size: 1.3rem;
-  margin: 0.5rem 0;
-  text-shadow: 0 0 8px #00ff00, 0 0 2px #00d9ff;
+  font-size: 1.4rem;
+  margin: 0.7rem 0;
+  text-shadow: 0 0 15px #00ff00, 0 0 5px #00ff00, 0 2px 4px rgba(0, 0, 0, 0.8);
   letter-spacing: 2px;
+  font-weight: 500;
 }
 .accessGranted {
   color: #ff0055;
   font-weight: bold;
   margin-left: 1rem;
-  text-shadow: 0 0 8px #ff0055, 0 0 2px #00d9ff;
+  text-shadow: 0 0 20px #ff0055, 0 0 8px #ff0055, 0 2px 6px rgba(0, 0, 0, 0.9);
+  font-size: 1.1rem;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #ff0055;
+  border-radius: 8px;
+  animation: grantedPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes grantedPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px #ff0055;
+  }
+  50% {
+    box-shadow: 0 0 30px #ff0055, 0 0 10px #ff0055;
+  }
 }
 .progressBar {
   width: 320px;
-  height: 8px;
-  background: #222;
+  height: 10px;
+  background: rgba(17, 17, 17, 0.9);
+  border: 1px solid #00ff00;
   border-radius: 4px;
-  margin-top: 2rem;
-  box-shadow: 0 0 8px #00ff00;
+  margin-top: 2.5rem;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+  position: relative;
+  z-index: 10;
 }
 .progress {
   height: 100%;
@@ -43,7 +77,7 @@
   height: 100vh;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.7;
+  opacity: 0.3;
   background: #000;
 }
 .terminalContainer {
@@ -74,4 +108,50 @@
 .terminalBody {
   padding: 1.5rem;
   min-height: 300px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contentBox {
+    padding: 2rem 2rem;
+    max-width: 85%;
+  }
+
+  .bootLine {
+    font-size: 1.2rem;
+    margin: 0.6rem 0;
+  }
+
+  .accessGranted {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  .progressBar {
+    width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contentBox {
+    padding: 1.5rem 1.5rem;
+    max-width: 90%;
+  }
+
+  .bootLine {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    letter-spacing: 1px;
+  }
+
+  .accessGranted {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    margin-left: 0;
+  }
+
+  .progressBar {
+    width: 240px;
+    height: 8px;
+  }
 }
