@@ -5,7 +5,7 @@ const defaultCode = `function greet(name) {
   return 'Hello, ' + name + '!';
 }
 
-greet('Komal');
+console.log(greet('Komal'));
 `;
 
 export default function LiveCodeEditor() {
@@ -14,11 +14,26 @@ export default function LiveCodeEditor() {
 
   const runCode = () => {
     try {
+      // Capture console.log output
+      let consoleOutput: string[] = [];
+      const originalLog = console.log;
+      console.log = (...args: any[]) => {
+        consoleOutput.push(args.map(arg => String(arg)).join(' '));
+        originalLog(...args); // Also log to real console for debugging
+      };
+
+      // Execute the code safely
       // eslint-disable-next-line no-eval
-      // Only for demo: never use eval in production!
-      // eslint-disable-next-line no-new-func
-      const result = Function(`"use strict";return (${code})`)();
-      setOutput(String(result ?? ''));
+      eval(code);
+      
+      // Restore console.log
+      console.log = originalLog;
+
+      // Show console output or success message
+      const finalOutput = consoleOutput.length > 0 
+        ? consoleOutput.join('\n')
+        : 'Code executed successfully (no output)';
+      setOutput(finalOutput);
     } catch (e) {
       setOutput('Error: ' + (e as Error).message);
     }

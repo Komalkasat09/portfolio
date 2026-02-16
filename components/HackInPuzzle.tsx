@@ -20,6 +20,12 @@ export default function HackInPuzzle({ onSolved }: { onSolved: () => void }) {
     }
   };
 
+  const handleAbort = () => {
+    setSolved(true);
+    setError('');
+    setTimeout(onSolved, 300);
+  };
+
   return (
     <div className={styles.puzzleContainer}>
       <h2 className={styles.puzzleTitle}>Hack In :: Entry Challenge</h2>
@@ -36,6 +42,9 @@ export default function HackInPuzzle({ onSolved }: { onSolved: () => void }) {
         />
         <button className={styles.puzzleButton} type="submit">Hack In</button>
       </form>
+      <button className={styles.abortButton} onClick={handleAbort}>
+        Abort Mission → Skip to Portfolio
+      </button>
       {error && <div className={styles.puzzleError}>{error}</div>}
       {solved && <div className={styles.puzzleSuccess}>Access Granted!</div>}
     </div>
