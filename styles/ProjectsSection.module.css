@@ -143,8 +143,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
-  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(3px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +153,7 @@
 }
 
 .modalContent {
-  background: #000;
+  background: rgba(0, 0, 0, 0.95);
   border: 2px solid #00ff00;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(0, 255, 0, 0.5);
@@ -162,6 +162,9 @@
   max-height: 90vh;
   overflow-y: auto;
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 10;
 }
 
 .modalHeader {

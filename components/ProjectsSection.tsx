@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from '../styles/ProjectsSection.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
+import MatrixRain from './MatrixRain';
 
 interface Project {
   pid: number;
@@ -114,6 +115,7 @@ export default function ProjectsSection() {
             exit={{ opacity: 0 }}
             onClick={() => setSelectedProject(null)}
           >
+            <MatrixRain />
             <motion.div
               className={styles.modalContent}
               initial={{ scale: 0.8, opacity: 0 }}

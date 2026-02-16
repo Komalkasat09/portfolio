@@ -36,7 +36,7 @@ export default function MatrixRain() {
       }
     }
 
-    const interval = setInterval(draw, 50);
+    const interval = setInterval(draw, 70);
 
     function handleResize() {
       if (!canvas) return;
